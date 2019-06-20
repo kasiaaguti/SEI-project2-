@@ -2,6 +2,8 @@ import React from 'react'
 import mapboxgl from 'mapbox-gl'
 
 
+
+
 mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN
 class Map extends React.Component {
   constructor() {
@@ -14,14 +16,15 @@ class Map extends React.Component {
       container: this.mapDiv,
       style: 'mapbox://styles/gaebar/cjx3dxidn01941comlfwaysve',
       center: this.props.center,
-      zoom: 0
+      zoom: 2.1
     })
     this.markers.forEach(marker => marker.remove())
     this.markers = this.props.markers.map(point => {
       // create custom popups one for each marker
-      var el = document.createElement('div')
+      const el = document.createElement('div')
       el.className = 'marker'
       el.style.backgroundImage = 'url(' + point.image.current.preview + ')'
+
 
 
       // create markers with HTML popoups
@@ -34,9 +37,12 @@ class Map extends React.Component {
           .setHTML(`
             <div>
               <h3>${point.title}</h3>
-                <a href="${point.player.day.link}" target="_blank">
-                  <img src="${point.image.current.preview}">
-                </a>
+                <div style="background-image: url('${point.image.current.preview}'); height: 100px; min-width: 150px; background-repeat: no-repeat; background-size: cover; background-position: center;">
+                  <a href="${point.player.day.link}" target="_blank" style="height: 100%; width:100%; display: flex; justify-content: center; align-items:center;">
+                    <div style="background-image: url('https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4f9.png'); background-size: contain; height: 50px; width: 50px;">
+                    </div>
+                  </a>
+                </div>
             </div>
           `))
         .addTo(this.map)
