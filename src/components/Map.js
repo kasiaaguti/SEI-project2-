@@ -20,13 +20,19 @@ class Map extends React.Component {
       // create custom popups one for each marker
       var el = document.createElement('div')
       el.className = 'marker'
-      el.style.backgroundImage = 'url(' + point.flag + ')'
+      el.style.backgroundImage = 'url(' + point.image.current.preview + ')'
+
+
       // create markers with HTML popoups
       // https://docs.mapbox.com/help/tutorials/custom-markers-gl-js/
       return new mapboxgl.Marker(el)
-        .setLngLat({ lat: point.latlng[0], lng: point.latlng[1] })
+        .setLngLat({ lat: point.location.latitude, lng: point.location.longitude })
+
+
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-          .setHTML('<h3>' + point.name + '</h3>'))
+          .setHTML(`
+            <h3>${point.title}</h3>
+          `))
         .addTo(this.map)
     })
   }

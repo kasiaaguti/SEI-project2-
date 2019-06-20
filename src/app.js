@@ -25,15 +25,15 @@ class App extends React.Component {
 
   // gst the list of countries using the restcountries API and select the name, flat and latlng.
   getWebcamList() {
-    axios.get('https://webcamstravel.p.rapidapi.com/webcams/list/orderby=popularity,desc/limit=20?show=webcams:image,location,player',
+    axios.get('https://webcamstravel.p.rapidapi.com/webcams/list/orderby=popularity,desc/limit=50?show=webcams:image,location,player',
       { headers: {
         'X-RapidAPI-H': 'webcamstravel.p.rapidapi.com',
         'X-RapidAPI-Key': rapidApiKey
       }
       })
-      .then(res => console.log(res.data))
+
       .then(res => {
-        this.setState({ points: this.getFilteredWebcamList(res.data) })
+        this.setState({ points: res.data.result.webcams}, () => console.log(this.state.points))
       })
       .catch(err => console.log(err))
   }
@@ -47,9 +47,15 @@ class App extends React.Component {
   // }
 
   render() {
-    // if (!this.state.points) return null
+    if (!this.state.points) return null
     return (
-      <h1>Hello</h1>
+      <main>
+        <Map
+          markers={this.state.points}
+          onClick={this.handleClick}
+          center={this.mapCenter}
+        />
+      </main>
     )
   }
 }
@@ -59,8 +65,13 @@ ReactDOM.render(
   document.getElementById('root')
 )
 
-{/* <Map
-  markers={this.state.points}
-  onClick={this.handleClick}
-  center={this.mapCenter}
-/> */}
+{/* <h1>Tube Status</h1>
+<div>
+  {this.state.points && this.state.points.map(point => (
+    <ul key={point.id}>
+      <li>{point.title}</li>
+      <span>Latitude: {point.location.latitude}</span>
+      <span>Longitude: {point.location.longitude}</span>
+    </ul>
+  ))}
+</div> */}
