@@ -15,7 +15,7 @@ class App extends React.Component {
 
     this.state = { points: null }
     this.mapCenter = { lat: 51.515, lng: -0.078 }
-    // this.handleClick = this.handleClick.bind(this)
+    this.handleClick = this.handleClick.bind(this)
   }
 
   // get Webcam list when the App component has being loading into the DOM.
@@ -42,9 +42,9 @@ class App extends React.Component {
     return list.filter(element => element.latlng.length > 0)
   }
 
-  // handleClick() {
-  //   this.getWebcamList()
-  // }
+  handleClick() {
+    this.getWebcamList()
+  }
 
   render() {
     if (!this.state.points) return null

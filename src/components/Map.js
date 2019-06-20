@@ -1,5 +1,7 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
+
+
 mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN
 class Map extends React.Component {
   constructor() {
@@ -31,7 +33,17 @@ class Map extends React.Component {
 
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
           .setHTML(`
-            <h3>${point.title}</h3>
+            <div>
+              <h3>${point.title}</h3>
+
+                <a href="${point.player.day.link}" target="_blank">
+                  <img src="${point.image.current.preview}">
+                </a>
+
+              
+
+            </div>
+
           `))
         .addTo(this.map)
     })
@@ -44,3 +56,6 @@ class Map extends React.Component {
   }
 }
 export default Map
+
+// <h4><a href="${point.player.day.link}"</a></h4>
+// <img src=${point.image.current.preview} />
