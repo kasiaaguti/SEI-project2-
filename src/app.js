@@ -9,6 +9,8 @@ import 'bulma'
 import Home from './components/Home'
 import NavBar from './components/NavBar'
 import Main from './components/Main'
+import Redirect from './components/Redirect'
+
 
 
 const App = () => {
@@ -19,6 +21,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/map" component={Main} />
+          <Route path="/blog" component= {Redirect}/>
         </Switch>
       </main>
     </BrowserRouter>

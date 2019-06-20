@@ -16,7 +16,7 @@ class Map extends React.Component {
       container: this.mapDiv,
       style: 'mapbox://styles/gaebar/cjx3dxidn01941comlfwaysve',
       center: this.props.center,
-      zoom: 2.1
+      zoom: 1
     })
     this.markers.forEach(marker => marker.remove())
     this.markers = this.props.markers.map(point => {
