@@ -1,1 +1,30 @@
+@import '~mapbox-gl/dist/mapbox-gl.css';
 
+*{
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.map {
+  height: 100vh;
+  width: 100vw;
+}
+.marker {
+  background-size: contain;
+  min-width: 30px;
+  height: 20px;
+  border-radius: 3%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.mapboxgl-popup {
+  max-width: 200px;
+}
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 4px 12px 3px;
+}
