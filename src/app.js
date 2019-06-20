@@ -20,12 +20,14 @@ class App extends React.Component {
 
   // get Webcam list when the App component has being loading into the DOM.
   componentDidMount(){
-    this.getWebcamList()
+    const { lat, lng } = this.mapCenter
+    this.getWebcamList(lat, lng)
   }
 
   // gst the list of countries using the restcountries API and select the name, flat and latlng.
-  getWebcamList() {
-    axios.get('https://webcamstravel.p.rapidapi.com/webcams/list/orderby=popularity,desc/limit=50?show=webcams:image,location,player',
+  getWebcamList(lat, lng) {
+    axios.get(`https://webcamstravel.p.rapidapi.com/webcams/list/nearby=${lat},${lng},250/limit=50?show=webcams:image,location,player`,
+    // axios.get('https://webcamstravel.p.rapidapi.com/webcams/list/orderby=popularity,desc/limit=50?show=webcams:image,location,player',
       { headers: {
         'X-RapidAPI-H': 'webcamstravel.p.rapidapi.com',
         'X-RapidAPI-Key': rapidApiKey
@@ -37,13 +39,14 @@ class App extends React.Component {
       })
       .catch(err => console.log(err))
   }
+
   // filter out the countries without latlng
   getFilteredWebcamList(list){
     return list.filter(element => element.latlng.length > 0)
   }
 
-  handleClick() {
-    this.getWebcamList()
+  handleClick(e) {
+    this.getWebcamList(e.lngLat.lat, e.lngLat.lng)
   }
 
   render() {

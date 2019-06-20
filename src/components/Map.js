@@ -16,6 +16,11 @@ class Map extends React.Component {
       center: this.props.center,
       zoom: 0
     })
+
+    this.map.on('click', this.props.onClick)
+  }
+
+  componentDidUpdate(){
     // create custom markers with Webcam flags and popups, as explaind in https://docs.mapbox.com/mapbox-gl-js/example/custom-marker-icons/
     this.markers.forEach(marker => marker.remove())
     this.markers = this.props.markers.map(point => {
@@ -39,11 +44,7 @@ class Map extends React.Component {
                 <a href="${point.player.day.link}" target="_blank">
                   <img src="${point.image.current.preview}">
                 </a>
-
-              
-
             </div>
-
           `))
         .addTo(this.map)
     })
