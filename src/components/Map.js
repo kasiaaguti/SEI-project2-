@@ -16,8 +16,32 @@ class Map extends React.Component {
       center: this.props.center,
       zoom: 0
     })
+    this.markers.forEach(marker => marker.remove())
+    this.markers = this.props.markers.map(point => {
+      // create custom popups one for each marker
+      var el = document.createElement('div')
+      el.className = 'marker'
+      el.style.backgroundImage = 'url(' + point.image.current.preview + ')'
 
-    this.map.on('click', this.props.onClick)
+
+      // create markers with HTML popoups
+      // https://docs.mapbox.com/help/tutorials/custom-markers-gl-js/
+      return new mapboxgl.Marker(el)
+        .setLngLat({ lat: point.location.latitude, lng: point.location.longitude })
+
+
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+          .setHTML(`
+            <div>
+              <h3>${point.title}</h3>
+                <a href="${point.player.day.link}" target="_blank">
+                  <img src="${point.image.current.preview}">
+                </a>
+            </div>
+          `))
+        .addTo(this.map)
+    })
+    this.map.on('dblclick', this.props.onClick)
   }
 
   componentDidUpdate(){
