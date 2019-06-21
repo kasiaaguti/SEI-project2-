@@ -3,12 +3,14 @@ import React from 'react'
 const Home = () => (
   <section className="hero is-fullheight-with-navbar">
     <div className="hero-body">
-      <div className="container has-text-centered">
-        <p className="title is-1 has-text-black has-text-centered">
-         Digital Nomad
+      <div className="container-custom">
+        <p className="title is-2 has-text-white has-text-left">
+         “Choose a job that you like, <br />
+         and you will never <br />
+         have to work a day in your life.”
         </p>
-        <p className="subtitle is-4 has-text-black has-text-centered">
-          A nomad app
+        <p className="subtitle is-4 has-text-white has-text-left">
+           – Confucius
         </p>
 
       </div>

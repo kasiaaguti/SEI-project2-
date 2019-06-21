@@ -14,6 +14,8 @@ class Main extends React.Component {
     this.state = { points: null }
     this.mapCenter = { lat: 51.515, lng: -0.078 }
     this.handleClick = this.handleClick.bind(this)
+
+
   }
 
   // get Webcam list when the App component has being loading into the DOM.
@@ -68,6 +70,7 @@ class Main extends React.Component {
           markers={this.state.points}
           onClick={this.handleClick}
           center={this.mapCenter}
+          
         />
       </main>
     )

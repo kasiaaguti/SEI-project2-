@@ -40,3 +40,26 @@ html, body {
   color: white;
 
 }
+
+
+#github-icon {
+    background-image: url('../assets/github-logo.png');
+    background-size: cover;
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin: 10px 15px;
+
+}
+
+
+
+.container-custom {
+      background-color: rgba(122, 121, 121, 0.55);
+      margin-left: 0;
+      // display: inline-block;
+      // position: absolute;
+      // float:left;
+
+
+}
