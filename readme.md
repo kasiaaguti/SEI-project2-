@@ -1,12 +1,13 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #2: Reacathon
+See the website online at
 
 ## Overview
 
-Our project is to **build a React application** that consumes a **public API**.
+We have **built a React application** that consumes a **public API**.
 
 ### Technical Requirements
 
-*  We used Consume a public API** – We used
+* Consume a public API**
 * **Have several components** - At least one classical and one functional.
 * **The app can include a router** - with several "pages".
 * **Include wireframes** - that you designed before building the app.

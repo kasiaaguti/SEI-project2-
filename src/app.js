@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Favicon from 'react-favicon'
 
 import 'bulma'
 import './styles/style.scss'
@@ -34,15 +33,3 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 )
-
-
-// ReactDOM.render(
-//       <div>
-//           <Favicon url="/path/to/favicon.ico"/>
-//           // do other stuff here
-//       </div>
-//       , document.querySelector('.react'));
-
-
-/* <Route path="/" component={Blog} />
-<Route path="/" component={Job Search} /> */
