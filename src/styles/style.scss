@@ -52,12 +52,14 @@ html, body {
 
 .navbar-end {
   background-color: #3273dc;
+  a.navbar-item {
+    color: white;
+    &:hover {
+      background-color: rgba(122, 121, 121, 0.55);
+    }
+  }
 }
 
-
-.navbar-item, .navbar-link {
-  color: white;
-}
 
 
 .container-custom {

@@ -38,7 +38,7 @@ class NavBar extends React.Component {
           </a>
         </div>
         <div className={`navbar-menu ${this.state.navbarOpen ? 'is-active' : ''}`}>
-          <div className="navbar-end is-white">
+          <div className="navbar-end">
             <Link to="/map" className="navbar-item">Map</Link>
             <a href="https://iamaileen.com/how-to-become-a-digital-nomad-guide//" target="_blank" rel="noopener noreferrer" className="navbar-item">Blog</a>
             <a href="https://jobs.remoteworkhub.com/jobs/search/" target="_blank" rel="noopener noreferrer" className="navbar-item">Jobs</a>
