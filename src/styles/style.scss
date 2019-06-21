@@ -36,10 +36,8 @@ html, body {
  background-size: cover;
 }
 
-.navbar is-link {
-  color: white;
 
-}
+
 
 
 #github-icon {
@@ -52,6 +50,14 @@ html, body {
 
 }
 
+.navbar-end {
+  background-color: #3273dc;
+}
+
+
+.navbar-item, .navbar-link {
+  color: white;
+}
 
 
 .container-custom {

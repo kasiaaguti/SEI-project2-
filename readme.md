@@ -2,13 +2,11 @@
 
 ## Overview
 
-The second project is to, working as a small group, **build a React application** that consumes a **public API**.
+Our project is to **build a React application** that consumes a **public API**.
 
 ### Technical Requirements
 
-Your app must:
-
-* **Consume a public API** – this could be anything but it must make sense for your project.
+*  We used Consume a public API** – We used
 * **Have several components** - At least one classical and one functional.
 * **The app can include a router** - with several "pages".
 * **Include wireframes** - that you designed before building the app.

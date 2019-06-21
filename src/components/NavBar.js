@@ -25,26 +25,27 @@ class NavBar extends React.Component {
 
   render() {
     return (
+
       <nav className="navbar is-link">
 
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item">Digital Nomads Hub</Link>
 
+        <div className="navbar-brand">
+          <Link to="/" className="navbar-item"><strong>Digital Nomads Hub</strong></Link>
+          <a role="button" className= {`navbar-burger ${this.state.navbarOpen ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" onClick={this.toggleNavbar}>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div className={`navbar-menu ${this.state.navbarOpen ? 'is-active' : ''}`}>
+          <div className="navbar-end is-white">
+            <Link to="/map" className="navbar-item">Map</Link>
+            <a href="https://iamaileen.com/how-to-become-a-digital-nomad-guide//" target="_blank" rel="noopener noreferrer" className="navbar-item">Blog</a>
+            <a href="https://jobs.remoteworkhub.com/jobs/search/" target="_blank" rel="noopener noreferrer" className="navbar-item">Jobs</a>
+            <a  href="https://github.com/kasiaaguti/SEI-project2-" id="github-icon" target="_blank"></a>
+          </div>
 
-            <a role="button" className={`navbar-burger ${this.state.navbarOpen ? 'is-active' : ''}`} aria-label="menu" aria-expanded="false" onClick={this.toggleNavbar}>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-          <div className={`navbar-menu ${this.state.navbarOpen ? 'is-active' : ''}`}>
-            <div className="navbar-end">
-              <Link to="/map" className="navbar-item">Map</Link>
-              <a href="https://iamaileen.com/how-to-become-a-digital-nomad-guide//" target="_blank" rel="noopener noreferrer" className="navbar-item">Blog</a>
-              <a href="https://jobs.remoteworkhub.com/jobs/search/" target="_blank" rel="noopener noreferrer" className="navbar-item">Jobs</a>
-              <a  href="https://github.com/kasiaaguti/SEI-project2-" id="github-icon" target="_blank"></a>
-            </div>
-          </div>
+        </div>
       </nav>
     )
   }
