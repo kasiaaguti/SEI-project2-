@@ -1,8 +1,9 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #2: Reacathon
+See the website online at
 
 ## Overview
 
-Our project is to **build a React application** that consumes a **public API**.
+We have **built a React application** that consumes a **public API**.
 
 ### Technical Requirements
 
