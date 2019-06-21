@@ -10,7 +10,8 @@ const NavBar = () => {
 
       <div className="navbar-end">
         <Link to="/map" className="navbar-item">Map</Link>
-        <Link to="/blog" className="navbar-item">Blog</Link>
+        <a href="https://iamaileen.com/how-to-become-a-digital-nomad-guide//" target="_blank" rel="noopener noreferrer" className="navbar-item">Blog</a>
+        <a href="https://jobs.remoteworkhub.com/jobs/search/" target="_blank" rel="noopener noreferrer" className="navbar-item">Jobs</a>
       </div>
     </nav>
   )

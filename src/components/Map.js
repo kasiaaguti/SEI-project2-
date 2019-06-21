@@ -47,6 +47,7 @@ class Map extends React.Component {
           `))
         .addTo(this.map)
     })
+    this.map.addControl(new mapboxgl.NavigationControl())
     this.map.on('dblclick', this.props.onClick)
   }
 
