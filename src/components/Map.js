@@ -1,7 +1,6 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
 mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN
-console.log(process.env.MAPBOX_ACCESS_TOKEN)
 
 
 class Map extends React.Component {
