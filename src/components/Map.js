@@ -1,10 +1,9 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
-
-
-
-
 mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN
+console.log(process.env.MAPBOX_ACCESS_TOKEN)
+
+
 class Map extends React.Component {
   constructor() {
     super()
@@ -84,8 +83,11 @@ class Map extends React.Component {
 
   render() {
     return (
+      <main>
+        <section className="scren">  <a id="github-icon" target="_blank" href="https://github.com/gaebar/sei-project-1"></a></section>
+        <div className="map" ref={el => this.mapDiv = el}/>
 
-      <div className="map" ref={el => this.mapDiv = el}/>
+      </main>
 
     )
   }

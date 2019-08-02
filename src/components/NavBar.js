@@ -41,7 +41,7 @@ class NavBar extends React.Component {
           <div className="navbar-end">
             <Link to="/map" className="navbar-item">Map</Link>
             <a href="https://iamaileen.com/how-to-become-a-digital-nomad-guide//" target="_blank" rel="noopener noreferrer" className="navbar-item">Blog</a>
-            <a href="https://jobs.remoteworkhub.com/jobs/search/" target="_blank" rel="noopener noreferrer" className="navbar-item">Jobs</a>
+            <a href="https://www.indeed.co.uk/Digital-jobs-in-Remote" target="_blank" rel="noopener noreferrer" className="navbar-item">Jobs</a>
             <a  href="https://github.com/kasiaaguti/SEI-project2-" id="github-icon" target="_blank"></a>
           </div>
 
