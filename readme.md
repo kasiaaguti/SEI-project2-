@@ -9,18 +9,16 @@ This was the second project during the General Assembly Software Engineering Imm
 ​
 ## Built With
 ​
-React
-Axios
-Insomnia
-Webpack
-HTML5
-CSS
-Bulma
-npm
-Teletype
-Heroku
+* React
+* Axios
+* Insomnia
+* Webpack
+* HTML5
+* CSS
+* Bulma
+* Teletype
+* Heroku
 
-​
 ## Deployment
 ​
 The job board is deployed on Heroku and it can be found here: http://digital-nomad-ga.herokuapp.com/
@@ -49,7 +47,7 @@ Most of our coding was done on one laptop, so we discussed each piece of code an
 
 The core idea was to used Webcamstravel API https://webcamstravel.p.rapidapi.com/ and render it on a map (for which we used Mapbox). Webcam API gave us access to public cameras from all over the world. We used geographic coordinates to show markers of the camera's locations on the map. After an user clicks a marker in desired location a popup appears showing more details. User can click on the camera image to see a live view from this particular camera in a new window.
 
-<img src="src/assets/Screenshot.png." width="900">
+<img src="src/assets/Screenshot.png" width="900">
 
 ## Challenges
 
