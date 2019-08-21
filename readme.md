@@ -1,7 +1,7 @@
 ![ga_cog_large_red_rgb](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
 ​
 # Software Engineering Immersive: Project 2
-This was the second project during the General Assembly Software Engineering Immersive course (Week 5). The project was made in collaboration with AGaetano https://github.com/gaebar/
+This was the second project during the General Assembly Software Engineering Immersive course (Week 5). The project was made in collaboration with Gaetano https://github.com/gaebar/
 ​
 ## Timeframe & Team
 ​
@@ -21,7 +21,7 @@ This was the second project during the General Assembly Software Engineering Imm
 
 ## Deployment
 ​
-The job board is deployed on Heroku and it can be found here: http://digital-nomad-ga.herokuapp.com/
+Our website is deployed on Heroku and it can be found here: http://digital-nomad-ga.herokuapp.com/
 
 ## Brief
 ​
