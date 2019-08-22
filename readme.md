@@ -36,7 +36,7 @@ Our website is deployed on Heroku and it can be found here: http://digital-nomad
 | Deployment                             | Heroku |
 | Module bundler                             | Webpack |
 
-## Approach:
+## Approach
 
 As this was a pair coded 'reactathon' with a very limited timeframe, we chose was to focus on functionality. For styling we used Bulma which was very helpful.
 
