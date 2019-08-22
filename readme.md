@@ -50,12 +50,15 @@ The core idea was to used Webcamstravel API https://webcamstravel.p.rapidapi.com
 ## Visuals
 
 **First render of a map**
+<br />
 <img src="src/assets/all.png" width="900">
 
-**More cameras for a particular location**
+**More cameras for a clicked location**
+<br />
 <img src="src/assets/italy.png" width="900">
 
-**Pop up in a particular location**
+**Pop up on a clicked marker**
+<br />
 <img src="src/assets/Screenshot.png" width="900">
 
 **Rendering first set of markers**
