@@ -5,18 +5,14 @@ This was the second project during the General Assembly Software Engineering Imm
 
 ## Brief
 ​
-Build a React application that consumes a public API.
+* Build a React application that consumes a public API.
+* Have several components - At least one classical and one functional.
+* The app should include a router - with several "pages".
+* Have semantically clean HTML.
+* Be deployed online and accessible to the public.
+* Work in pairs.
 
-Have several components - At least one classical and one functional.
 
-The app should include a router - with several "pages".
-
-Have semantically clean HTML.
-
-Be deployed online and accessible to the public.
-
-Work in pairs.
-​
 ## Timeframe & Team
 ​
 48h, pair programming
@@ -24,8 +20,6 @@ Work in pairs.
 ## Deployment
 ​
 Our website is deployed on Heroku and it can be found here: http://digital-nomad-ga.herokuapp.com/
-​
-## Built With
 ​
 ## Technologies Used
 | Category | List |
