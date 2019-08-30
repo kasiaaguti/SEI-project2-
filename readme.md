@@ -88,7 +88,7 @@ getWebcamList(lat, lng) {
 ```
 
 
-## Challenges
+## Challenges & wins
 
 Webcamstravel allows to access just fifty cameras at the same time. We decided at the first render to show 50 most popular cameras in the world. Then fifty most popular in the 200km radius from the place where a user clicks.
 
