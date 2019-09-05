@@ -9,9 +9,7 @@ const Home = () => (
          and you will never <br />
          have to work a day in your life.”
         </p>
-        <p className="subtitle is-4 has-text-white has-text-left">
-           – Confucius
-        </p>
+       
 
       </div>
     </div>
